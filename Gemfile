@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', '4.0.0'
 gem 'jquery-rails'
 gem 'devise'
 gem 'simple_form'
@@ -9,8 +9,8 @@ gem 'aws-sdk'
 gem 'ffaker'
 gem 'will_paginate', '~> 3.0'
 gem 'bootstrap-will_paginate'
-gem 'sass-rails',   '>= 3.2'
-gem 'coffee-rails', '~> 3.2.1'
+gem 'sass-rails'
+gem 'coffee-rails'
 gem 'uglifier', '>= 1.0.3'
 gem 'bootstrap-sass', '~> 2.3.2.2'
 
