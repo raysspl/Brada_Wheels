@@ -2,17 +2,6 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.0'
 gem 'jquery-rails'
-gem 'devise'
-gem 'simple_form'
-# gem 'paperclip', '~> 3.0'
-gem 'aws-sdk'
-gem 'ffaker'
-gem 'will_paginate', '~> 3.0'
-gem 'bootstrap-will_paginate'
-gem 'sass-rails'
-gem 'coffee-rails'
-gem 'uglifier', '>= 1.0.3'
-gem 'bootstrap-sass', '~> 2.3.2.2'
 
 group :production do
 	gem 'pg'
@@ -20,18 +9,29 @@ end
 
 group :development, :test do
 	gem 'sqlite3'
-	gem 'rspec-rails'
-	gem 'capybara'
-	# gem 'capybara-webkit', '1.0.0'
-	gem 'guard-rspec'
-	# gem 'database-cleaner'
 end
 
-# group :assets do
-#   gem 'sass-rails', '>= 3.2'
-#   gem 'coffee-rails', '~> 3.2.1'
-#   gem 'uglifier', '>= 1.0.3'
-#   gem 'bootstrap-sass', '~> 2.3.2.2'
-# end
+group :assets do
+	gem 'sass-rails', '~> 4.0.0'
+	gem 'uglifier', '>= 1.3.0'
+	gem 'coffee-rails', '~> 4.0.0'
+	gem 'turbolinks'
+	gem 'jbuilder', '~> 1.2'
+end
 
-gem 'lolize', :require => 'lolize/auto'
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
+
+# Use ActiveModel has_secure_password
+# gem 'bcrypt-ruby', '~> 3.0.0'
+
+# Use unicorn as the app server
+# gem 'unicorn'
+
+# Use Capistrano for deployment
+# gem 'capistrano', group: :development
+
+# Use debugger
+# gem 'debugger', group: [:development, :test]
