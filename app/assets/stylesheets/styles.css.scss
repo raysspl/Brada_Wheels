@@ -41,6 +41,10 @@ body {
   font-size: 20px; 
 }
 
+.btn .btn-navbar .collapsed {
+  float: right;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -63,7 +67,7 @@ body {
   height: 650px;
 }
 .carousel-inner > .item > img {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   min-width: 100%;

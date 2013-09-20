@@ -5,21 +5,31 @@
             <!-- <a class="navbar-brand" href="#">Brada Wheels</a> -->
             <div class="navbar-inner">  <!-- <div class="nav-collapse collapse"> -->
               <ul class="nav navbar-nav">
-                <li><%= link_to 'BRADA WHEELS', root_path %></li>
-                <li><%= link_to 'About', about_path %></li>
-                <li><%= link_to 'Holler', contact_path %></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="nav-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
+                <button type='button'  class='btn btn-navbar collapsed' data-toggle='collapse' data-target='.nav-collapse'>
+                  <span class='icon-bar'></span>
+                  <span class='icon-bar'></span>
+                  <span class='icon-bar'></span>
+                </button>
+                      <div class='nav-collapse' style='height: 0px;'>
+                        <ul class='nav'>
+                          <li><%= link_to 'BRADA WHEELS', root_path %></li> 
+                          <li><%= link_to 'About', about_path %></li>
+                          <li><%= link_to 'Holler', contact_path %></li>
+                          <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">BR10</a></li>
+                              <li><a href="#">BR5</a></li>
+                              <li><a href="#">RS7</a></li>
+                              <li><a href="#">RS5</a></li>
+                              <li class="divider"></li>
+                              <li class="nav-header">Nav header</li>
+                              <li><a href="#">Separated link</a></li>
+                              <li><a href="#">One more separated link</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                    </div>
               </ul>
             </div>
           </div>
